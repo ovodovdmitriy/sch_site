@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/main.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id='pagecen'>
+      <div id='main_text'>
+        <h1 id='a'>Пункты приема батареек СВАО</h1>
+      </div>
+      <div id='aside'>
+        <h2 id='nazv'>Районы</h2>
+        <div id='rayoni'>
+          <a href="{% url 'aleks' %}" class='district'><b>Алексеевский</b></a>
+          <a href="{% url 'altu' %}" class='district'><b>Алтуфьевский</b></a>
+          <a href="{% url 'babu' %}" class='district'><b>Бабушкинский</b></a>
+          <a href="{% url 'bibi' %}" class='district'><b>Бибирево</b></a>
+          <a href="{% url 'buty' %}" class='district'><b>Бутырский</b></a>
+          <a href="{% url 'lian' %}" class='district'><b>Лианозово</b></a>
+          <a href="{% url 'los' %}" class='district'><b>Лосиноостровский</b></a>
+          <a href="{% url 'marf' %}" class='district'><b>Марфино</b></a>
+          <a href="{% url 'mary' %}" class='district'><b>Марьина Роща</b></a>
+          <a href="{% url 'ost' %}" class='district'><b>Останкинский</b></a>
+          <a href="{% url 'otr' %}" class='district'><b>Отрадное</b></a>
+          <a href="{% url 'ros' %}" class='district'><b>Ростокино</b></a>
+          <a href="{% url 'svib' %}" class='district'><b>Свиблово</b></a>
+          <a href="{% url 'smedved' %}" class='district'><b>Северное Медведково</b></a>
+          <a href="{% url 'sev' %}" class='district'><b>Северный</b></a>
+          <a href="{% url 'ymedved' %}" class='district'><b>Южное Медведково</b></a>
+          <a href="{% url 'yar' %}" class='district'><b>Ярославский</b></a>
+        </div>
+      </div>
+      <div id="text">
+        <h1 class='intext' id ='zachem'>Почему нужно сдавать использованные батарейки?</h1>
+        <!--
+          <p class='intext'>Большинство привычных бытовых приборов, которыми мы ежедневно пользуемся, работают от автономных источников питания, то есть батареек. Если вы внимательно рассматривали корпус любой батарейки, то, вы видели знак перечеркнутой корзины. Этот знак говорит о том, что их нельзя выбрасывать в корзины с бытовым мусором, а следует сдавать на утилизацию. Выбрасывая батарейки вместе с другим бытовым мусором, люди способствуют загрязнению грунта и воды токсичными и вредными веществами. Батарейки,
+          вместе с другими отходами вывозятся на свалки, где разрушаются, и тяжелые металлы выделяясь из батареек проникают в грунтовые воды. По подсчетам, каждая выброшенная в мусор батарейка, способна загрязнить около 20 кв. м земли!</p>
+          <br>
+          <p class='intext'>Отработанная батарейка содержит довольно опасные вещества, такие как: олово, ртуть, цинк, магний, никель, кадмий, свинец. Ртуть ухудшает зрение, слух, вызывает заболевание нервной системы. Ртуть – это яд для человека. Свинец влияет на почки и мозг. Кадмий - вызывает рак. Вред батареек на окружающую среду, как вы видите, очевидный!</p>
+        -->
+        <img src="{% static 'mainapp\images\kartinka.jpg' %}" id='img' height='400'>
+      </div>
+    </div>
+  </body>
+</html>

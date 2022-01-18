@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+    {% block title %}
+    {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id='nazv'>
+      <h1>
+      {% block nazv %}
+      {% endblock %}
+      </h1>
+    </div>
+    <div id='mainpart'>
+      <div id='map'>
+        {% block mainpart %}
+        {% endblock %}
+      </div>
+    </div>
+    <div id='aside'>
+      <h2 id ='adress'>Адреса</h2>
+      <ul id='spisok'>
+        {% block aside %}
+        {% endblock %}
+      </ul>
+    </div>
+    <div id='glav'>
+      <a href="/" id='nagl'><b>На главную </b></a>
+    </div>
+  </body>
+</html>
