@@ -19,21 +19,23 @@
       {% endblock %}
       </h1>
     </div>
-    <div id='mainpart'>
-      <div id='map'>
-        {% block mainpart %}
-        {% endblock %}
+    <div id='parent'>
+      <div id='mainpart'>
+        <div id='map'>
+          {% block mainpart %}
+          {% endblock %}
+        </div>
       </div>
-    </div>
-    <div id='aside'>
-      <h2 id ='adress'>Адреса</h2>
-      <ul id='spisok'>
-        {% block aside %}
-        {% endblock %}
-      </ul>
-    </div>
-    <div id='glav'>
-      <a href="/" id='nagl'><b>На главную </b></a>
+      <div id='aside'>
+        <h2 id ='adress'>Адреса</h2>
+        <ul id='spisok'>
+          {% block aside %}
+          {% endblock %}
+        </ul>
+      </div>
+      <div id='glav'>
+        <a href="/" id='nagl'><b>На главную </b></a>
+      </div>
     </div>
   </body>
 </html>
